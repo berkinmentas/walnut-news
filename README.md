@@ -14,5 +14,7 @@ News scraping service for Walnut Portal project. Built with Node.js and Puppetee
 4. Run: `npm start`
 
 ## Docker
-Run with Docker Compose:
+Run with Docker:
+```docker build -t walnut-news.```
+```docker run --network="host" -t walnut-news ```
 ```docker-compose up```
