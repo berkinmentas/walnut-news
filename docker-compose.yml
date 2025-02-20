@@ -1,0 +1,11 @@
+version: '3'
+services:
+  scraper:
+    build: .
+    environment:
+      - LARAVEL_API_URL=http://host.docker.internal:8000
+      - SCRAPE_INTERVAL=300000
+      - TARGET_URL=https://www.hurriyet.com.tr
+    volumes:
+      - .:/app
+      - /app/node_modules
